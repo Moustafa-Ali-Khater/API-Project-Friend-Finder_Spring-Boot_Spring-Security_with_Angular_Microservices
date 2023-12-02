@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: orgnization-gateway
+  banner:
+    location: classpath:banners/banner.txt
+
+server:
+  port: 9891
+

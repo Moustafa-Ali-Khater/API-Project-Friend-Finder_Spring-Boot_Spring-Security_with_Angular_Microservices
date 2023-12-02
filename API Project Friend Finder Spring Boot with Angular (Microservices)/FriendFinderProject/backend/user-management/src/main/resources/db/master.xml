@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <!-- Entity -->
+        <!-- For Test -->
+    <!--    <include file="/db/changelog/5_52_24_11_2023_create_table_student.sql"/>-->
+    <include file="classpath:db/changelog/entity/create_user_entity.sql"/>
+    <include file="classpath:db/changelog/entity/create_role_entity.sql"/>
+    <include file="classpath:db/changelog/entity/create_organization_entity.sql"/>
+    <include file="classpath:db/changelog/entity/create_user_role_entity.sql"/>
+    <include file="classpath:db/changelog/entity/create_organization_role_entity.sql"/>
+
+    <!-- Query -->
+    <include file="classpath:db/changelog/query/add_user_query.sql"/>
+    <include file="classpath:db/changelog/query/add_organization_query.sql"/>
+</databaseChangeLog>
